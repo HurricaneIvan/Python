@@ -144,7 +144,6 @@ def main():
         print("Bot plays first")
         while current_game:
             if new_game:
-                print("here")
                 board = copy.deepcopy(new_board)
                 player2_guess(board)
                 spaces -= 1
@@ -163,7 +162,6 @@ def main():
                         current_game = True
                     else:
                         print("Thanks for playing")
-                print(f'spaces {spaces}')
             elif spaces == 0:
                 current_game = False
                 if check_tie(board) == False:
